@@ -1,0 +1,7 @@
+// Mixins
+
+@mixin text($size,$height) {
+  // Typography
+  font-size: $size;
+  line-height: $height;
+}

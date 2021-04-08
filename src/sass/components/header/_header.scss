@@ -1,0 +1,673 @@
+// Header
+.header {
+  // Block model
+  padding: 30px 0 0 0;
+  // Typography
+  font-family: $font-primary;
+
+  &__wrap {
+    // Position
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    // Block model
+    width: 1240px;
+    height: 100%;
+    box-sizing: border-box;
+
+    @media (max-width: 1280px) {
+      // Block model
+      width: 100%;
+    }
+
+    @media (max-width: 580px) {
+      // // Block model
+      padding: 0 20px;
+    }
+  }
+
+  &__wrap-fluid {
+    // Position
+    display: flex;
+    align-items: center;
+    // Block model
+    height: 60px;
+    // Stylization
+    background-color: $color_primary;
+  }
+
+  &__top {
+    // Position
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    // Block model
+    width: 100%;
+    margin: 0 0 25px 0;
+  }
+
+  &__logo {
+    // Position
+    display: flex;
+    justify-content: flex-start;
+    align-self: flex-start;
+    align-items: end;
+    // Typography
+    color: $color_primary;
+    //Animation
+    transition: opacity ease-in 0.4s;
+
+    &:hover {
+      // Stylization
+      opacity: 0.95;
+      //Animation
+      transition: opacity ease-in 0.4s;
+    }
+
+    &:active {
+      // Stylization
+      opacity: 0.2;
+    }
+
+    &-text {
+      // Position
+      display: flex;
+      flex-flow: column;
+
+      @media (max-width:768px) {
+        // Typography
+        font-size: 12px;
+      }
+    }
+
+    &-title {
+      // Typography
+      font-size: 24px;
+      text-transform: uppercase;
+
+      @media (max-width:768px) {
+        // Block model
+        margin: 0 0 3px 0;
+        // Typography
+        font-size: 18px;
+      }
+    }
+
+    &-picture {
+      // Block model
+      margin: 0 10px 0 0;
+    }
+
+    &-image {
+      // Block model
+      width: 100%;
+      height: auto;
+    }
+
+  }
+
+  &__contacts {
+    // Position
+    display: flex;
+    flex: 1 0 auto;
+    flex-flow: column;
+    align-items: flex-end;
+    align-self: flex-end;
+    // Typography
+    font-size: 14px;
+
+    @media (max-width:768px) {
+      // Typography
+      font-size: 12px;
+    }
+
+    @media (max-width: 580px) {
+      // Position
+      display: none;
+    }
+  }
+
+  &__visuality {
+    // Typography
+    color: $color_primary;
+    font-size: 18px;
+
+    &:hover {
+      // Typography
+      text-decoration: underline;
+    }
+  }
+
+  &__phone {
+    // Typography
+    color: $color_primary;
+    font-size: 24px;
+
+    @media (max-width:768px) {
+      // Block model
+      margin: 0 0 3px 0;
+      // Typography
+      font-size: 18px;
+    }
+  }
+
+  &__mail {
+    // Block model
+    margin: 0 0 10px 0;
+    // Typography
+    color: $color_primary;
+  }
+
+  &__bottom {
+    // Position
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    // Block model
+    height: 100%;
+  }
+
+  &__nav {
+    // Position
+    display:flex;
+    flex: 1;
+    align-items: center;
+
+    @media (max-width: 990px) {
+      // Position
+      display: none;
+    }
+
+    &-list {
+      // Position
+      display: flex;
+      align-items: center;
+      // Block model
+      height: 100%;
+      margin:0;
+      padding:0;
+      // Stylization
+      list-style-type: none;
+    }
+
+    &-item {
+      // Position
+      display: flex;
+      align-items: center;
+      // Block model
+      height: 100%;
+
+      @media (max-width: 1280px) {
+        // Block model
+        margin: 0 20px 0 0;
+      }
+
+    }
+
+    &-link {
+      // Position
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // Typography
+      color: $color_white;
+      font-size: 18px;
+      // // Block model
+      width: 100%;
+      height: 100%;
+      padding: 0 20px;
+
+      @media (max-width: 1280px) {
+        // Position
+        font-size: 16px;
+      }
+
+      &--active {
+        // Stylization
+        background-color: $color_white;
+        // Typography
+        color: $color_primary;
+      }
+
+      &:hover {
+        // Typography
+        color: $color_primary;
+        // Stylization
+        background-color: $color_white;
+      }
+
+      &:active {
+        // Stylization
+        opacity: 0.2;
+      }
+
+    }
+
+  }
+
+  &__social {
+    // Position
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+
+    &-item {
+      // Block model
+      width: 20px;
+      height: 20px;
+      margin: 0 0 0 20px;
+      // Typography
+      font-size: 0;
+    }
+
+    &-link {
+      // Posisiton
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // Block model
+      width: 100%;
+      height: 100%;
+      // Animation
+      transition: opacity ease-in .4s;
+
+      &:hover {
+        // Stylization
+        opacity: .7;
+      }
+
+    }
+
+    @media (max-width:580px) {
+      // Position
+      display: none;
+    }
+  }
+
+  &__menu {
+    // Position
+    display: none;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: center;
+    // Block model
+    padding: 0 40px 0 0;
+    // Typography
+    font-size: 0;
+
+    @media (max-width: 990px) {
+      // Position
+      display: flex;
+      }
+
+    }
+
+    &__button {
+      // Block model
+      width: 30px;
+      height: 21px;
+      // Typography
+      color: $color_black;
+      font-size: 0;
+      text-transform: uppercase;
+      //Animation
+      transition: opacity ease-in 0.4s;
+
+      &--hidden {
+        // Position
+        display: none;
+      }
+
+    }
+
+    &__icon {
+      // Animation
+      transition: opacity ease-in .4s;
+
+      &:active {
+        // Stylization
+        opacity: 0.5;
+      }
+    }
+
+    &-close {
+      // Position
+      display: block;
+      // Block model
+      width: 16px;
+      height: 16px;
+
+      &--hidden {
+        // Position
+        display: none;
+      }
+
+    }
+
+  &__section {
+    // Position
+    position: absolute;
+    display: none;
+    flex-flow: row wrap;
+    top: 60px;
+    // Block model
+    width: 100%;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    z-index: 999;
+    // Stylization
+    background-color: $color_white;
+
+    &--active {
+      // Position
+      display: flex;
+    }
+
+    &-item {
+      // Position
+      flex: 0 0 50%;
+      // Block model
+      // width: 33.33%;
+      margin: 0 0 18px 0;
+      box-sizing: border-box;
+    }
+
+    &-link {
+      // Position
+      position: relative;
+      // Typography
+      color: $color_primary;
+
+      &:hover::after {
+        // Block model
+        width: 70px;
+      }
+
+      &::after {
+        // Position
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        // Block model
+        width: 0;
+        height: 1px;
+        // Stylization
+        background-color: $color_optional-1;
+        // Animation
+        transition: width ease-in .4s;
+      }
+
+    }
+
+  }
+
+}
+
+.mobile {
+  // Position
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  // Block model
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  z-index: 999;
+  // Stylization
+  opacity: 1;
+  // Animation
+  transform: translateX(0%);
+  transition: transform .4s ease-out,
+              opacity .4s ease-out;
+
+  @media (max-width: 990px) {
+    // Position
+    display: flex;
+  }
+
+  &--hidden {
+    // Position
+    display: none;
+    // Stylization
+    opacity: 0;
+    // Animation
+    transform: translateX(-105%);
+  }
+
+  &-wrap {
+    // Position
+    position: relative;
+    // Block model
+    width: 300px;
+    // height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    // Stylization
+    opacity: 1;
+    overflow: auto;
+    box-shadow: $color_shadow 5px 0 5px;
+    background-color: $color_white;
+  }
+
+  &__close {
+    // Position
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    // Block model
+    width: 8px;
+    height: 17px;
+    // Typography
+    font-size: 0;
+
+    &-svg {
+      // Block model
+      width: 100%;
+      height: auto;
+      // Stylization
+      fill: none;
+      stroke-width: 1px;
+      stroke: black;
+      transition: opacity .4s ease-out;
+
+      &:active {
+        // Stylization
+        opacity: 0.5;
+      }
+
+    }
+
+    &-path {
+      // Stylization
+      stroke-width: inherit;
+      stroke: inherit;
+    }
+
+  }
+
+  &__logo {
+    // Position
+    display: flex;
+    align-items: self-end;
+    // Block model
+    margin: 0 0 30px 0;
+    // Typography
+    font-size: 10px;
+
+    &-image {
+      // Block model
+      margin: 0 10px 0 0;
+    }
+
+    &-text {
+      // Position
+      display: flex;
+      flex-flow: column;
+      // Typography
+      font-size: 14px;
+      font-weight: normal;
+      // Stylization
+      text-transform: none;
+    }
+
+    &-name {
+      // Typography
+      font-size: 18px;
+    }
+
+  }
+
+  &__list {
+    // Block model
+    margin: 0 0 20px 0;
+  }
+
+  &__item {
+    // Position
+    position: relative;
+    // Block model
+    padding: 0 0 10px 0;
+    margin: 20px 0 0 -20px;
+
+    &::before {
+      // Position
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      // Block model
+      width: 100%;
+      height: 1px;
+      // Stylization
+      background-color: $color_optional-2;
+    }
+
+    &::after {
+      // Position
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      // Block model
+      width: 0%;
+      height: 1px;
+      // Stylization
+      background-color: $color_optional-1;
+      // Animation
+      transition: width ease-in .4s;
+    }
+
+    &:hover::after {
+      // Block model
+      width: 100%;
+    }
+
+    &:active::after {
+      // Block model
+      width: 0%;
+      // Animation
+      transition: width ease-in .2s;
+    }
+
+  }
+
+  &__link {
+    // Position
+    display: inline;
+    // Block model
+    padding: 0 0 0 20px;
+    // Typography
+    color: $color_primary;
+    font-size: 16px;
+
+    &:focus {
+      // Stylization
+      background-color: $color_optional-2;
+    }
+
+  }
+
+  &__phone {
+    // Position
+    display: inline-block;
+    // Block model
+    margin: 0 0 10px 0;
+    // Typography
+    color: $color_primary;
+    font-size: 24px;
+  }
+
+  &__mail {
+    // Position
+    display: inline-block;
+    // Typography
+    color: $color_primary;
+    font-size: 14px;
+    // Block model
+    margin: 0 0 20px 0;
+  }
+
+  &__social {
+    // Position
+    display: flex;
+    // Block model
+    margin: 0 0 20px 0;
+    // Typography
+    font-size: 0;
+
+    &-item {
+        // Block model
+        width: 40px;
+        height: 40px;
+        margin: 0 10px 0 0;
+    }
+
+    &-link {
+      // Position
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // Block model
+      width: 100%;
+      height: 100%;
+      // Stylization
+      border: solid 1px $color_primary;
+      // Animation
+      transition: background-color ease-in .4s;
+
+      &:hover {
+        // Stylization
+        background-color: $color_optional-2;
+      }
+
+      &:focus {
+        // Stylization
+        background-color: $color_optional-1;
+      }
+
+    }
+
+    &-link:hover > &-svg {
+      fill: $color_white;
+    }
+
+    &-link:focus > &-svg {
+      fill: $color_white;
+    }
+
+    &-svg {
+      // Animation
+      transition: fill ease-in .4s;
+
+      &--facebook {
+        // Block model
+        width: 10px;
+      }
+
+    }
+
+  }
+
+}

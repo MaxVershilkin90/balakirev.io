@@ -1,0 +1,67 @@
+// Buttons styles
+
+.button {
+  // Position
+  display: inline-block;
+  // Block model
+  padding: 13px 40px;
+  // Typography
+  color: $color_white;
+  font-size: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+  // Stylization
+  background-color: $color_primary;
+  // Animation
+  transition: box-shadow ease-in .4s, background-color ease-in .4s;
+
+  @media (max-width: 768px) {
+    // Typography
+    font-size: 14px;
+  }
+
+  &__optional {
+    // Typography
+    color: $color_primary;
+    font-family: $font-primary;
+    // Stylization
+    outline: solid 1px $color_primary;
+    outline-offset: -1px;
+    background-color: transparent;
+    // Animation
+    transition: color ease-in .4s, background-color ease-in .4s, box-shadow ease-in .4s;
+
+    &:hover {
+      // Typography
+      color: $color_white;
+      // Stylization
+      background-color: $color_primary;
+      // Animation
+      transition: color ease-in .4s, box-shadow ease-in .4s, background-color ease-in .4s;
+    }
+
+  }
+
+  &:hover {
+    // Stylization
+    cursor: pointer;
+    box-shadow: 5px 5px 5px $color_shadow;
+    // Animation
+    transition: box-shadow ease-in .4s, background-color ease-in .4s;
+  }
+
+  &:active {
+    // Stylization
+    box-shadow: 0 0 0 $color_shadow;
+    // Animation
+    transition: box-shadow ease-in .1s;
+  }
+
+  &:focus {
+    // Typography
+    color: $color_white;
+    // Stylization
+    background-color: $color_primary;
+  }
+
+}

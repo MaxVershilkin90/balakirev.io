@@ -1,0 +1,288 @@
+// Feedback
+.feedback {
+  // Setting self variable
+  $s: &;
+  // Position
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // Block model
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  // Stylization
+  opacity: 1;
+  background: $color_optional-2-trns;
+  // Animation
+  transition: all ease-in .4s;
+
+  &--hidden {
+    // Position
+    display: none;
+    // Stylization
+    opacity: 1;
+    // Animation
+    transition: all ease-in .4s;
+  }
+
+  &__wrap {
+    // Position
+    position: relative;
+    //Block model
+    width: 830px;
+
+  }
+
+  &__title {
+    // Posisiton
+    position: absolute;
+    // Block model
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    // Stylization
+    overflow: hidden;
+  }
+
+  &__form {
+    // Position
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    // Block model
+    padding: 40px;
+    box-sizing: border-box;
+    // Stylization
+    border: none;
+    background-color: $color-optional-2;
+  }
+
+  &__close {
+    // Position
+    position: absolute;
+    right: 40px;
+    // Typography
+    font-size: 14px;
+    // Block model
+    // width: 16px;
+    // height: 16px;
+    // Stylization
+    background: url("/static/images/img_icon_close.svg") center no-repeat;
+    // Animtation
+    transition: opacity ease-in .4s;
+
+    &:hover {
+      // Stylization
+      cursor: pointer;
+      opacity: 0.5;
+      // Animtation
+      transition: opacity ease-in .4s;
+    }
+
+    &:focus {
+      // Stylization
+      opacity: 0.3;
+    }
+  }
+
+  &__field {
+    // Block model
+    margin: 0;
+    padding: 0;
+    // Stylization
+    border: none;
+  }
+
+  &__wrapper {
+    // Position
+    display: flex;
+    flex-flow: column;
+    flex: 1;
+    // Block model
+    margin: 0 0 18px 0;
+
+    &:nth-of-type(3) {
+      // Block model
+      margin: 0;
+    }
+
+    &--half {
+      // Position
+      display: flex;
+      flex-flow: row;
+    }
+
+    &--margined {
+      // Position
+      display: flex;
+      flex-flow: сolumn;
+
+      &:first-child {
+        // Block model
+        margin: 0 18px 0 0;
+      }
+
+    }
+
+  }
+
+  &__label {
+    // Position
+    display: block;
+    // Block model
+    margin: 0 0 5px 0;
+    // Typography
+    color: $color_black;
+    font-size: 18px;
+  }
+
+  &__input {
+    // Block model
+    width: 100%;
+    padding: 15px 0 11px 20px;
+    box-sizing: border-box;
+    // Typography
+    font-size: 14px;
+    // Stylization
+    box-shadow: none;
+    border: solid 1px rgba(0,0,0,0.2);
+
+    &--hidden {
+      // Position
+      position: absolute;
+      left: 0;
+      // Block model
+      width: 18px;
+      height: 18px;
+      // Stylization
+      opacity: 0;
+      z-index: 1;
+    }
+
+    &:focus {
+      // Stylization
+      border: solid 1px rgba(0,0,0,0.3);
+      outline: 0;
+    }
+
+    &:hover::after {
+      // Stylization
+      cursor: pointer;
+      opacity: 0.5;
+      // Animation
+      transition: opacity ease-in .4s;
+    }
+
+    &:focus + #{$s}__agreement {
+      // Stylization
+      text-decoration: underline;
+    }
+
+    &:checked + #{$s}__agreement::before {
+      // Stylization
+      background-color: $color_optional-3;
+    }
+
+    &:focus + #{$s}__agreement::after {
+      // Stylization
+      opacity: 0.5;
+      // Animation
+      transition: opacity ease-in .4s;
+    }
+
+  }
+
+  &__message {
+    // Block model
+    width: 100%;
+    padding: 14px 0 0 18px;
+    margin: 0 0 18px 0;
+    box-sizing: border-box;
+    // Typography
+    font-family: $font-primary;
+    font-size: 18px;
+    // Stylization
+    box-shadow: none;
+    border: solid 1px rgba(0,0,0,0.2);
+
+    &:focus {
+      // Stylization
+      outline: 0;
+      border: solid 1px rgba(0,0,0,0.3);
+    }
+  }
+
+  &__information {
+    // Position
+    display: inline-block;
+    position: relative;
+    // Block model
+    padding: 0 0 0 32px;
+    margin: 0 0 18px 0;
+    // Typography
+    font-size: 14px;
+
+    &:hover {
+      // Stylization
+      cursor: pointer;
+    }
+
+  }
+
+  &__agreement {
+
+    &:hover {
+      // Stylization
+      cursor: pointer;
+    }
+
+    &::before {
+      // Position
+      content: '';
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      // Block model
+      width: 14px;
+      height: 14px;
+      // Stylization
+      z-index: 1;
+      // Animation
+      transition: opacity ease-in .4s;
+    }
+
+    &::after {
+      // Position
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      // Block model
+      width: 18px;
+      height: 18px;
+      // Stylization
+      opacity: 1;
+      border: solid 1px $color_optional-1;
+      z-index: 1;
+    }
+
+    &-link {
+
+      &:hover {
+        // Stylization
+        text-decoration: underline;
+      }
+
+    }
+
+  }
+
+  &__button {
+    // Position
+    display: block;
+  }
+
+}

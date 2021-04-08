@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="keywords" content="танцы, рисование, изобразительное искусство, актёрское мастерство, хореография, музыка">
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Raleway:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+  <link href="./css/common.css" rel="stylesheet" />
+  <link href="./css/pages/contacts.css" rel="stylesheet" />
+  <!-- <link rel="stylesheet" href="/static/fonts/oswald.css" /> -->
+  <link rel="shortcut icon" href="/imgs/img_icon_favicon.png">
+  <meta name="description" content="Музыкальная школа имени Балакирева обучает будущих танцоров, музыкантов, художников и актёров.">
+  <title>Контакты</title>
+</head>
+
+<body>
+    <include src="./src/sass/components/header/header.html"></include>
+
+    <!-- Main -->
+    <main class="main">
+
+      <!-- Contacts -->
+      <section class="contacts">
+
+        <div class="contacts__wrap container">
+
+          <!-- Sections nav -->
+          <ul class="contacts__nav">
+
+            <li class="contacts__nav-item">Раздел</li>
+
+          </ul>
+
+          <h1 class="contacts__title title">Контакты</h1>
+
+          <!-- Feedback form -->
+          <section class="contacts__feedback">
+
+            <h2 class="contacts__feedback-title">Задать вопрос</h2>
+
+            <!-- Form -->
+            <form class="contacts__feedback-form" method="post" action="index.html">
+
+              <fieldset class="contacts__feedback-field">
+
+                <div class="contacts__feedback-wrapper">
+
+                  <label for="name" class="contacts__feedback-label">Имя</label>
+                  <input class="contacts__feedback-input" id="name" type="text" name="name" value="" placeholder="Например, Виктор" required autofocus>
+
+                </div>
+
+                <div class="contacts__feedback-wrapper--half">
+
+                  <div class="contacts__feedback-wrapper contacts__feedback-wrapper--margined">
+
+                    <label for="phone" class="contacts__feedback-label">Телефон</label>
+                    <input class="contacts__feedback-input" id="phone" type="tel" name="phone" value="" placeholder="+7 900 000 00 00" required>
+
+                  </div>
+
+                  <div class="contacts__feedback-wrapper">
+
+                    <label for="mail" class="contacts__feedback-label">Почта</label>
+                    <input  class="contacts__feedback-input" id="mail" type="email" name="mail" value="" placeholder="box@mail.com" required>
+
+                  </div>
+
+                </div>
+
+
+                <label for="message" class="contacts__feedback-label">Сообщение</label>
+                <textarea class="contacts__feedback-textarea" id="message" name="message" rows="8" cols="80" required></textarea>
+
+                <div class="contacts__feedback-information">
+                  <input class="contacts__feedback-input contacts__feedback-input--hidden" id="agreement" type="checkbox" name="agreement" required>
+                  <label class="contacts__feedback-agreement" for="agreement">Вы согласны с обработкой Ваших персональных данных?</label>
+                </div>
+
+                <button class="contacts__feedback-button button button__optional" type="submit" name="button">Отправить</button>
+
+              </fieldset>
+
+            </form>
+
+            <!-- Addition information -->
+            <div class="contacts__information-wrap">
+
+              <p class="contacts__information">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+
+              <p class="contacts__information">
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+
+              <p class="contacts__information contacts__information--highlighted">
+                Вы можете задать интерсующий Вас вопрос, заполнив форму обратной связи.
+              </p>
+
+            </div>
+
+          </section>
+
+        </div>
+
+      </section>
+
+    </main>
+
+    <include src="./src/sass/components/footer/footer.html"></include>
+
+    <script type="module" src="./js/index.js"></script>
+
+  </body>
+
+</html>

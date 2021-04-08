@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="keywords" content="танцы, рисование, изобразительное искусство, актёрское мастерство, хореография, музыка">
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Raleway:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/> -->
+  <link href="./css/common.css" rel="stylesheet" />
+  <link href="./css/pages/main.css" rel="stylesheet" />
+  <!-- <link rel="stylesheet" href="/static/fonts/oswald.css" /> -->
+  <link rel="shortcut icon" href="/imgs/img_icon_favicon.png">
+  <meta name="description" content="Музыкальная школа имени Балакирева обучает будущих танцоров, музыкантов, художников и актёров.">
+  <title>Музыкальная школа имени Балакирева: профессиональные обучение музыке, танцам, рисованию и актёрскому мастерству.</title>
+</head>
+<body>
+
+<include src="./src/sass/components/header/header.html"></include>
+
+<main class="main">
+
+      <audio autoplay="true" src="./sounds/sound_bg.mp3">
+        <source src="./sounds/sound_bg.ogg" type="audio/ogg; codec=vorbis">
+        <source src="./sounds/sound_bg.mp3" type="audio/mpeg">
+      </audio>
+
+      <section class="slider">
+
+        <div class="slider__slides">
+
+          <div class="slider__slide slider__slide--active">
+
+            <div class="slider__wrap container">
+
+              <div class="slider__description">
+
+                <h1 class="slider__title">
+                  Скрипка
+                </h1>
+
+                <div class="slider__divider divider"></div>
+
+                <p class="slider__text">
+                  «Королева музыки» – так называют скрипку за её выразительный, чарующий тембр и особенности звучания. История её создания насчитывает несколько веков.
+                </p>
+
+                <div class="slider__buttons">
+
+                  <a class="slider__link button button__optional" type="button" name="button" href="./section.html">
+                    Подробнее
+                  </a>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="slider__slide">
+
+            <div class="slider__wrap container">
+
+              <div class="slider__description">
+
+                <h1 class="slider__title">
+                  Виолончель
+                </h1>
+
+                <div class="slider__divider divider"></div>
+
+                <p class="slider__text">
+                  Виолончель считается самым выразительным музыкальным инструментом. Исполнитель, владеющий игрой на ней, способен успешно солировать, не менее успешно выступать в составе оркестра.
+                </p>
+
+                <div class="slider__buttons">
+
+                  <a class="slider__link button button__optional" type="button" name="button">
+                    Подробнее
+                  </a>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="slider__slide ">
+
+            <div class="slider__wrap container">
+
+              <div class="slider__description">
+
+                <h1 class="slider__title">
+                  Хореография
+                </h1>
+
+                <div class="slider__divider divider"></div>
+
+                <p class="slider__text">
+                  Танец - это твой пульс, биение твоего сердца, твоё дыхание. Это выражение во времени и движении, в счастье, радости, грусти и зависти.
+                </p>
+
+                <div class="slider__buttons">
+
+                  <a class="slider__link button button__optional" type="button" name="button">
+                    Подробнее
+                  </a>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="slider__picture">
+          <img class="slider__image" src="./imgs/img_slide_1.png" alt="Танцующая балерина">
+        </div>
+
+        <svg class="slider__svg">
+          <g filter="url(#filter0_d)">
+            <path d="M1920 154V14C1637.5 185 1065.95 141.536 0 154H1920Z" />
+          </g>
+          <defs>
+            <filter id="filter0_d" x="-10" y="0" width="1940" height="160" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+              <feOffset dy="-4"/>
+              <feGaussianBlur stdDeviation="5"/>
+              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+            </filter>
+          </defs>
+        </svg>
+
+        <div class="slider__nav slider__nav--hidden">
+          <span class="slider__nav-active"></span>/<span class="slider__nav-total"></span>
+        </div>
+
+      </section>
+
+      <section class="categories">
+
+        <div class="categories__wrap container">
+
+          <h2 class="categories__title title">Обучение</h2>
+
+          <div class="categories__carousel">
+
+            <ul class="categories__list">
+
+              <li class="categories__item">
+
+                <img class="categories__image" src="./imgs/img_category_1.png" alt="Изображение скрипки">
+
+                <span class="categories__superscript">Начинающим</span>
+                <span class="categories__label">Музыкантам</span>
+
+                <div class="categories__divider"></div>
+
+                <p class="categories__text">Профессиональная музыкальная подготовка.</p>
+
+                <a class="categories__link button" href="section.html" type="button" name="button">Подробнее</a>
+
+              </li>
+
+              <li class="categories__item">
+
+                <img class="categories__image" src="./imgs/img_category_1.png" alt="Изображение скрипки">
+
+                <span class="categories__superscript">Начинающим</span>
+                <span class="categories__label">Танцорам</span>
+
+                <div class="categories__divider"></div>
+
+                <p class="categories__text">Профессиональная хореографическая подготовка.</p>
+
+                <a class="categories__link button" href="section.html" type="button" name="button">Подробнее</a>
+
+              </li>
+
+              <li class="categories__item">
+
+                <img class="categories__image" src="./imgs/img_category_1.png" alt="Изображение скрипки">
+
+                <span class="categories__superscript">Начинающим</span>
+                <span class="categories__label">Актёрам</span>
+
+                <div class="categories__divider"></div>
+
+                <p class="categories__text">Профессиональная театральная подготовка.</p>
+
+                <a class="categories__link button" href="section.html" type="button" name="button">Подробнее</a>
+
+              </li>
+
+            </ul>
+
+          </div>
+
+          <!-- <div class="categories__nav">
+            <button class="categories__nav-item categories__nav-item--active" type="button">1</button>
+            <button class="categories__nav-item" type="button">2</button>
+          </div> -->
+
+        </div>
+
+      </section>
+
+      <section class="information">
+
+        <div class="information__wrap container">
+
+          <h2 class="information__title title">Информация</h2>
+
+          <div class="information__blocks">
+
+            <div class="information__useful">
+
+              <h3 class="information__useful-title">Полезное</h3>
+
+              <div class="information__useful-divider"></div>
+
+              <ul class="information__useful-list">
+
+                <li class="information__useful-item">
+                  <a class="information__useful-link" href="#">Памятка родителям</a>
+                </li>
+
+                <li class="information__useful-item">
+                  <a class="information__useful-link" href="#">Детский отдых в международных детский центрах</a>
+                </li>
+
+                <li class="information__useful-item">
+                  <a class="information__useful-link" href="#">Правила приёма учащихся</a>
+                </li>
+
+                <li class="information__useful-item">
+                  <a class="information__useful-link" href="#">Реквизиты для оплаты услуг</a>
+                </li>
+
+                <li class="information__useful-item">
+                  <a class="information__useful-link" href="#">Подготовительная группа</a>
+                </li>
+
+              </ul>
+
+              <a class="information__useful-button" href="#">Отделение платных услуг</a>
+
+            </div>
+
+            <div class="information__docs">
+
+              <h3 class="information__docs-title">Документы</h3>
+
+              <div class="information__docs-divider"></div>
+
+              <ul class="information__docs-list">
+
+                <li class="information__docs-item">
+                  <a class="information__docs-link" href="#">Образец заявления</a>
+                </li>
+
+                <li class="information__docs-item">
+                  <a class="information__docs-link--decreased" href="#">Отчет о расходовании средств добровольных пожертвований за 2020 год</a>
+                </li>
+
+                <li class="information__docs-item">
+                  <a class="information__docs-link--decreased" href="#">Отчет о расходовании средств добровольных пожертвований за 2019 год</a>
+                </li>
+
+              </ul>
+
+              <a class="information__docs-button" href="#">Все документы</a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="news">
+
+        <div class="news__wrap container">
+
+          <h2 class="news__title title">Новости</h2>
+
+          <ul class="news__list row flex-wrap">
+
+            <li class="col-xl-4 col-l-6 col-m-6 col-s-12 col-xs-12">
+              <div class="news__item content ">
+
+                <span class="news__date">21 января 2021</span>
+                <picture>
+                  <img class="news__img" src="./imgs/img_news_21_04_02.jpg" alt="Музыкальный конкурс">
+                </picture>
+
+                <h3 class="news__subtitle">
+                  <a class="news__link" href="./blog.html">
+                    Выступление наших скрипачей в КЦ Автоград
+                  </a>
+                </h3>
+
+                <div class="news__divider"></div>
+
+                <p class="news__text">
+                  В концертном зале КЦ АВТОГРАД состоялся юбилейный концерт национальной белорусской культурной.
+                </p>
+
+              </div>
+            </li>
+
+            <li class="col-xl-4 col-l-6 col-m-6 col-s-12 col-xs-12">
+              <div class="news__item content ">
+
+                <span class="news__date">21 марта 2021</span>
+                <picture>
+                  <img class="news__img" src="./imgs/img_news_21_03_15.jpg" alt="Музыкальный конкурс">
+                </picture>
+
+                <h3 class="news__subtitle">
+                  <a class="news__link" href="./blog.html">
+                    Фестиваль-конкурс народного творчества «Дети Солнца»
+                  </a>
+                </h3>
+
+                <div class="news__divider"></div>
+
+                <p class="news__text">
+                  25 октября 2019 г. в  МБОУДО «ДДЮТ» состоялся Международный  фестиваль-конкурс народного творчества «Дети Солнца».
+                </p>
+
+              </div>
+            </li>
+
+            <li class="col-xl-4 col-l-6 col-m-6 col-s-12 col-xs-12">
+              <div class="news__item content ">
+
+                <span class="news__date">7 марта 2021</span>
+                <picture>
+                  <img class="news__img" src="./imgs/img_news_21_03_07.jpg" alt="Музыкальный конкурс">
+                </picture>
+
+                <h3 class="news__subtitle">
+                  <a class="news__link" href="./blog.html">
+                    Открытый конкурс исполнителей на духовых и ударных инструментах "Юный виртуоз"
+                  </a>
+                </h3>
+
+                <div class="news__divider"></div>
+
+                <p class="news__text">
+                  3 декабря 2020 г. в стенах школы им.М.А. Балакирева г.Тольятти прошёл городской открытый конкурс исполнителей на духовых и ударных инструментах "Юный виртуоз".
+                </p>
+
+              </div>
+            </li>
+
+            <li class="col-xl-4 col-l-6 col-m-6 col-s-12 col-xs-12">
+              <div class="news__item content ">
+
+                <span class="news__date">23 февраля 2021</span>
+                <picture>
+                  <img class="news__img" src="./imgs/img_news_21_02_23.jpg" alt="Музыкальный конкурс">
+                </picture>
+
+                <h3 class="news__subtitle">
+                  <a class="news__link" href="./blog.html">
+                    Выступление в реабилитационном центре «Виктория»
+                  </a>
+                </h3>
+
+                <div class="news__divider"></div>
+
+                <p class="news__text">
+                  23 октября 2019 года состоялось выступление участников музыкального театра «АКЦЕНТ»  (руководитель Белосова Л.А., режиссёр Гордиенко А.А.) в Реабилитационном центре «Виктория», в подразделении «Бережок» в Комсомольском районе.
+                </p>
+
+              </div>
+            </li>
+
+            <li class="col-xl-4 col-l-6 col-m-6 col-s-12 col-xs-12">
+              <div class="news__item content ">
+
+                <span class="news__date">13 февраля 2021</span>
+                <picture>
+                  <img class="news__img" src="./imgs/img_news_21_02_13.jpg" alt="Музыкальный конкурс">
+                </picture>
+
+                <h3 class="news__subtitle">
+                  <a class="news__link" href="./blog.html">
+                    Выставка фоторабот тольяттинского фотографа Михаила Яннаева
+                  </a>
+                </h3>
+
+                <div class="news__divider"></div>
+
+                <p class="news__text">
+                  25 октября 2019 г. в  МБОУДО «ДДЮТ» состоялся Международный  фестиваль-конкурс народного творчества «Дети Солнца».
+                </p>
+
+              </div>
+            </li>
+
+            <li class="col-xl-4 col-l-6 col-m-6 col-s-12 col-xs-12">
+              <div class="news__item content ">
+
+                <span class="news__date">7 января 2021</span>
+                <picture>
+                  <img class="news__img" src="./imgs/img_news_21_01_07.jpg" alt="Музыкальный конкурс">
+                </picture>
+
+                <h3 class="news__subtitle">
+                  <a class="news__link" href="./blog.html">
+                    Конкурс пианистов «Играем классику и романтику»
+                  </a>
+                </h3>
+
+                <div class="news__divider"></div>
+
+                <p class="news__text">
+                  Поздравляем участников Открытого городского конкурса юных пианистов "Играем классику и романтику".
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </section>
+
+    </main>
+
+  <include src="./src/sass/components/footer/footer.html"></include>
+  <include src="./src/sass/components/feedback/feedback.html"></include>
+
+  <script type="module" src="./js/index.js"></script>
+
+  </script>
+
+  </html>

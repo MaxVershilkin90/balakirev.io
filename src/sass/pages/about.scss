@@ -1,0 +1,439 @@
+// About
+@import "../common.scss";
+
+// Information
+.about {
+  // Block model
+  padding: 80px 0 0 0;
+  // Stylization
+  background-color: $color_optional-2;
+
+  @media (max-width: 990px) {
+    // Block model
+    padding: 40px 0 0 0;
+  }
+
+  @media (max-width: 490px) {
+    // Block model
+    padding: 20px 0 0 0;
+  }
+
+  &__wrap {
+    // Block model
+    box-sizing: border-box;
+  }
+
+  &__nav {
+    // Position
+    display: flex;
+    // Block model
+    margin: 0 0 10px 0;
+
+    &-item {
+      // Block model
+      margin: 0 20px 0 0;
+    }
+
+    &-link {
+      // Typography
+      color: $color_optional-1;
+      font-size: 18px;
+
+      &:hover {
+        // Typography
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__blocks {
+    // Position
+    display: flex;
+    flex-flow: row;
+    // Stylization
+    box-shadow: 2px 0px 0px $color_shadow;
+
+    @media (max-width: 990px) {
+      // Position
+      flex-flow: column;
+    }
+
+  }
+
+  &__sections {
+    // Block model
+    padding: 40px;
+    box-sizing: border-box;
+    // Stylization
+    background-color: $color_white;
+
+    @media (max-width: 990px) {
+      // Block model
+      padding: 40px 20px;
+    }
+
+    @media (max-width: 490px) {
+      // Block model
+      padding: 20px 20px 40px;
+    }
+
+    &-title {
+      // Typography
+      font-size: 32px;
+      font-weight: normal;
+      // Block model
+      margin: 0 0 30px 0;
+
+      @media (max-width: 990px) {
+        // Block model
+        margin: 0 0 30px 0;
+        // Typography
+        font-size: 28px;
+      }
+
+      @media (max-width: 490px) {
+        // Block model
+        margin: 0 0 20px 0;
+        // Typography
+        font-size: 24px;
+      }
+
+    }
+
+    &-divider {
+      // Block model
+      width: 70px;
+      height: 1px;
+      margin: 0 0 40px 0;
+      // Stylization
+      background-color: $color_optional-1;
+
+      @media (max-width: 990px) {
+        // Block model
+        margin: 0 0 30px 0;
+      }
+
+      @media (max-width: 490px) {
+        // Block model
+        margin: 0 0 20px 0;
+      }
+
+    }
+
+    &-paragraph {
+      // Block model
+      margin: 0 0 20px 0;
+      // Typography
+      font-family: $font_optional-1;
+      font-size: 18px;
+      line-height: 28px;
+
+      @media (max-width:990px) {
+        // Typography
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      &--margined-bottom {
+        // Block model
+        margin: 0 0 40px 0;
+      }
+
+    }
+
+    &-list {
+      // Position
+      display: flex;
+      flex-flow: row;
+      // Block model
+      margin: 0 0 40px 0;
+      box-sizing: border-box;
+
+      @media (max-width: 990px) {
+        // Position
+        flex-flow: row wrap;
+      }
+
+      @media (max-width: 768px) {
+        // Position
+        flex-flow: column wrap;
+      }
+
+    }
+
+    &-item {
+      // Position
+      position: relative;
+      flex: 1 1 25%;
+      // Block model
+      height: 240px;
+      padding: 20px;
+      margin: 0 20px 0 0;
+      // Stylization
+      background-color: $color_optional-2;
+
+      @media (max-width: 990px) {
+        // Position
+        flex: 1 0 40%;
+        // Block model
+        margin: 0 20px 20px 0;
+
+        &:nth-child(even) {
+          // Block model
+          margin-right: 0;
+        }
+
+      }
+
+      @media (max-width: 768px) {
+        // Position
+        flex: 1 0 auto;
+        // Block model
+        height: auto;
+        margin: 0 0 20px 0;
+      }
+
+      &:last-of-type {
+        // Block model
+        margin-right: 0;
+
+      }
+
+    }
+
+    &-wrap {
+
+      @media (max-width: 768px) {
+        // Position
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+      }
+
+    }
+
+    &-picture {
+      // Block model
+      width: 66px;
+      margin: 0 0 20px 0;
+
+      @media (max-width: 768px) {
+        // Block model
+        width: 50px;
+        margin-right: 20px;
+      }
+
+    }
+
+    &-image {
+      // Block model
+      width: 100%;
+    }
+
+    &-document {
+      // Typography
+      font-family: $font-optional-1;
+      font-size: 18px;
+      line-height: 24px;
+
+      @media (max-width:990px) {
+        // Typography
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      @media (max-width: 768px) {
+        // Block model
+        margin: 0 0 20px 0;
+      }
+
+    }
+
+    &-link {
+      // Position
+      position: absolute;
+      left: 20px;
+      bottom: 20px;
+      // Typography
+      color: $color_primary;
+      font-size: 18px;
+
+      @media (max-width: 990px) {
+        // Typography
+        font-size: 18px;
+        line-height: 28px;
+      }
+
+      @media (max-width: 768px) {
+        // Position
+        position: static;
+      }
+
+      @media (max-width: 580px) {
+        // Typography
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      &:hover {
+        // Typography
+        text-decoration: underline;
+      }
+
+    }
+
+    &-button {
+      // Position
+      display: inline-block;
+      // Typography
+      color: $color_primary;
+      font-size: 18px;
+
+      &:hover {
+        // Typography
+        text-decoration: underline;
+      }
+
+    }
+
+  }
+
+  &__docs {
+    // Position
+    position: relative;
+    flex: 1 0 33%;
+    // Block model
+    padding: 40px;
+    box-sizing: border-box;
+    // Typography
+    color: $color_white;
+    // Stylization
+    background-color: $color_optional-3;
+
+    @media (max-width: 990px) {
+      // Block model
+      padding: 40px 20px;
+    }
+
+    @media (max-width: 490px) {
+      // Block model
+      padding: 20px 20px 40px;
+    }
+
+    &-title {
+      // Typography
+      font-size: 28px;
+      font-weight: normal;
+      // Block model
+      margin: 0 0 30px 0;
+
+      @media (max-width: 990px) {
+        // Typography
+        font-size: 28px;
+      }
+
+      @media (max-width: 490px) {
+        // Block model
+        margin: 0 0 20px 0;
+        // Typography
+        font-size: 24px;
+      }
+
+    }
+
+    &-divider {
+      // Block model
+      width: 70px;
+      height: 1px;
+      margin: 0 0 40px 0;
+      // Stylization
+      background-color: $color_white;
+
+      @media (max-width: 990px) {
+        // Block model
+        margin: 0 0 30px 0;
+      }
+
+      @media (max-width: 490px) {
+        // Block model
+        margin: 0 0 20px 0;
+      }
+
+    }
+
+    &-list {
+      // Typography
+      font-family: $font-optional-1;
+    }
+
+    &-item {
+      // Block model
+      margin: 0 0 30px 0;
+
+      &--highlighted {
+        // Block model
+        margin: 120px 0 0 0;
+      }
+
+      &:last-of-type {
+
+        @media (max-width: 990px) {
+          // Block model
+          margin: 0 0 40px 0;
+        }
+
+      }
+
+    }
+
+    &-link {
+      // Typography
+      color: $color_white;
+      font-size: 24px;
+      font-weight: 300;
+
+      &--decreased {
+        // Typography
+        color: $color_white;
+        font-size: 18px;
+        font-weight: 300;
+
+        &:hover {
+          // Typography
+          text-decoration: underline;
+        }
+
+      }
+
+      &:hover {
+        // Typography
+        text-decoration: underline;
+      }
+
+    }
+
+    &-button {
+      // Position
+      position: absolute;
+      left: 40px;
+      bottom: 40px;
+      // Typography
+      font-family: $font-primary;
+      color: $color_white;
+      font-size: 18px;
+
+      @media (max-width: 990px) {
+        // Position
+        position: static;
+      }
+
+      &:hover {
+        // Typography
+        text-decoration: underline;
+      }
+
+    }
+
+  }
+
+}

@@ -1,0 +1,61 @@
+<!-- Popup feedback form -->
+<section class="feedback hidden">
+
+  <div class="feedback__wrap container">
+
+    <h2 class="feedback__title">Форма обратной связи</h2>
+
+    <!-- Form -->
+    <form class="feedback__form" method="post" action="index.html">
+
+      <button class="feedback__close" type="button">Закрыть</button>
+
+      <fieldset class="feedback__field">
+
+        <div class="feedback__wrapper">
+
+          <label for="name" class="feedback__label">Ваше имя</label>
+          <input class="feedback__input" id="name" type="text" name="name" required>
+
+        </div>
+
+        <div class="feedback__wrapper--half">
+
+          <div class="feedback__wrapper feedback__wrapper--margined">
+
+            <label for="phone" class="feedback__label">Ваш телефон</label>
+            <input class="feedback__input" id="phone" type="tel" name="phone" required>
+
+          </div>
+
+          <div class="feedback__wrapper">
+
+            <label for="mail" class="feedback__label">Ваша почта</label>
+            <input  class="feedback__input" id="mail" type="email" name="mail" required>
+
+          </div>
+
+        </div>
+
+        <div class="feedback__wrapper">
+
+          <label for="message" class="feedback__label">Сообщение</label>
+          <textarea class="feedback__message" id="message" name="message" rows="8" cols="80" required></textarea>
+
+        </div>
+
+
+        <div class="feedback__information">
+
+          <input class="feedback__input feedback__input--hidden" id="agreement" type="checkbox" name="agreement" required>
+          <label for="agreement" class="feedback__agreement">Нажимая на кнопку, Вы соглашаетесь c <a class="feedback__agreement-link" href="/">политикой конфиденциальности</a>.</label>
+
+        </div>
+
+      </fieldset>
+
+    </form>
+
+  </div>
+
+</section>

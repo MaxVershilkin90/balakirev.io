@@ -1,0 +1,220 @@
+// Blog
+@import "../common.scss";
+
+// News
+.blog {
+  // Block model
+  padding: 80px 0;
+
+  @media (max-width: 990px) {
+    // Block model
+    padding: 40px 0;
+  }
+
+  @media (max-width: 580px) {
+    // Block model
+    padding: 20px 0;
+  }
+
+  &__wrap {
+    // Block model
+    width: 1240px;
+    box-sizing: border-box;
+
+    @media (max-width:1240px) {
+      // Block model
+      width: auto;
+    }
+  }
+
+  &__nav {
+    // Block model
+    margin: 0 0 10px 0;
+
+    &-item {
+      // Typography
+      color: $color_optional-1;
+      font-size: 18px;
+    }
+
+  }
+
+  &__title {
+    // Block model
+    margin: 0 0 20px 0;
+  }
+
+  &__years {
+    // Position
+    display: flex;
+    flex-flow: row;
+    // Block model
+    margin: 0 0 40px 0;
+
+    &-item {
+      // Block model
+      margin: 0 20px 0 0;
+    }
+
+    &-link {
+      // Position
+      position: relative;
+      // Typography
+      color: $color_optional-1;
+      font-size: 24px;
+      // Animation
+      transition: width ease-in .4s;
+
+      @media (max-width:990px) {
+        // Typography
+        font-size: 18px;
+      }
+
+      &:hover {
+
+        &::after {
+          // Block model
+          width: 50%;
+        }
+
+      }
+
+      &::after {
+        // Position
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        // Block model
+        width: 0;
+        height: 1px;
+        // Stylization
+        background-color: $color_optional-3;
+        // Animation
+        transition: width ease-in .4s;
+      }
+
+      &--active {
+        // Typography
+        color: $color_primary;
+
+        &::after {
+          // Block model
+          width: 50%;
+          // Stylization
+          background-color: $color_primary;
+        }
+
+      }
+
+    }
+
+  }
+
+  &__item {
+    // Position
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    // Block model
+    height: 100%;
+    padding: 20px 0 40px 40px;
+    // Stylization
+    background: linear-gradient(90deg, $color_optional-2 85%, $color_white 85%, $color_white 100%);
+
+    @media (max-width:768px) {
+      // Block model
+      padding: 40px;
+      // Stylization
+      background: $color_optional-2;
+    }
+
+    @media (max-width: 580px) {
+      // Block model
+      height: auto;
+      padding: 20px;
+      // Stylization
+      background: $color_optional-2;
+    }
+
+  }
+
+  &__date {
+    // Typography
+    color: $color_optional-1;
+    font-size: 14px;
+    // Block model
+    margin: 0 0 10px 0;
+  }
+
+  &__img {
+    // Block model
+    width: 100%;
+    margin: 0 0 20px 0;
+    // Stylization
+    overflow: hidden;
+    filter: sepia(0.15);
+    // Animation
+    transition: filter ease-in .4s;
+
+    &:hover {
+      filter: sepia(0);
+    }
+
+  }
+
+  &__subtitle {
+    // Block model
+    margin: 0 0 20px 0;
+    // Typography
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: normal;
+  }
+
+  &__link {
+    // Typography
+    color: $color_primary;
+
+    &:hover {
+      // Typography
+      text-decoration: underline;
+    }
+
+    @media (max-width:580px) {
+      // Position
+      position: static;
+    }
+
+  }
+
+  &__divider {
+    // Block model
+    width: 70px;
+    height: 1px;
+    margin: 0 0 20px 0;
+    // Stylization
+    background-color: $color_primary;
+  }
+
+  &__text {
+    // Typography
+    font-family: $font-optional-1;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+
+    @media (max-width:990px) {
+      // Typography
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    @media (max-width: 580px) {
+      // Block model
+      margin: 0 0 20px 0;
+    }
+
+  }
+
+}
